@@ -12,45 +12,18 @@ Install-Package LibraryCalc20 -Version 1.0.3
 
 ```cs
 
-using System;
 using LibraryCalc20;
+using System;
 
-namespace LibraryCalc20
+namespace Financeiro
 {
-    public class Calculadora : ICalculadora
+    class Program
     {
-
-        public Calculadora() { }
-        public int  Soma(int a, int b)
+        static void Main(string[] args)
         {
-            return a + b;
-        }
-        public int Sub(int a, int b)
-        {
-            return a - b;
-        }
-        public int Div(int a, int b)
-        {
-            return a / b;
-        }
-        public int Mult(int a, int b)
-        {
-            return a * b;
-        }
-
-        public int Soma(int a, int b, int c)
-        {
-            return a + b + c;
-        }
-
-        public int Sub(int a, int b, int c)
-        {
-            return a - b - c;
-        }
-
-        public int SomaEDiv(int a, int b, int c)
-        {
-            return (a + b) / c;
+            var calculadora = new Calculadora();
+            var x = calculator.Soma(2, 30);
+            Console.WriteLine("Value: " + x);
         }
     }
 }
