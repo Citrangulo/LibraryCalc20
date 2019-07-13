@@ -54,5 +54,13 @@ namespace LibraryCalc20
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>Resultado da soma</returns>
+
+        int SomaEDiv(int a, int b, int c);
+        /// <summary>
+        /// Soma de valores
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns>Resultado da soma</returns>
     }
 }

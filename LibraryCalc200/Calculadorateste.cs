@@ -171,5 +171,18 @@ namespace LibraryCalc200
 
             Assert.False((a - b - c) != resultado);
         }
+
+        [Fact]
+        public void SomaEDivSucesso()
+        {
+            var calculadora = new Calculadora();
+            var a = 10;
+            var b = 4;
+            var c = 7;
+
+            var resultado = calculadora.Div(calculadora.Soma(a, b), c);
+
+            Assert.True(((a + b)/c) == resultado);
+        }
     }
 }

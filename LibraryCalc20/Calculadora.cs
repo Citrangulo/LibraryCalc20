@@ -33,5 +33,10 @@ namespace LibraryCalc20
         {
             return a - b - c;
         }
+
+        public int SomaEDiv(int a, int b, int c)
+        {
+            return (a + b) / c;
+        }
     }
 }
