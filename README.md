@@ -6,6 +6,8 @@ Biblioteca de operações matemáticas
 ## How to install
 Install-Package LibraryCalc20 -Version 1.0.3
 
+![Nuget](https://img.shields.io/nuget/dt/LibraryCalc20.svg)
+
 ## How to use
 
 ```cs
