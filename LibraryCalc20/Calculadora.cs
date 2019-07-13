@@ -28,5 +28,10 @@ namespace LibraryCalc20
         {
             return a + b + c;
         }
+
+        public int Sub(int a, int b, int c)
+        {
+            return a - b - c;
+        }
     }
 }

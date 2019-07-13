@@ -73,6 +73,22 @@ namespace LibraryCalc200
             Assert.True((a + b + c) == resultado);
         }
 
+        [Theory]
+        [InlineData(1, 2, 8)]
+        [InlineData(10, 29, 10)]
+        [InlineData(-50, 32, 79)]
+        [InlineData(0, 2, -90)]
+        [InlineData(1, 200, 99)]
+        public void SomatresError(int a, int b, int c)
+        {
+            var calculadora = new Calculadora();
+
+            var resultado = calculadora.Soma(a, b, c);
+
+
+            Assert.False((a + b + c) != resultado);
+        }
+
         [Fact]
         public void DivSucesso()
         {
@@ -83,8 +99,8 @@ namespace LibraryCalc200
             var resultado = calculadora.Div(a, b);
 
             Assert.True((a / b) == resultado);
-        }  
-            [Theory]
+        }
+        [Theory]
         [InlineData(1, 2)]
         [InlineData(10, 29)]
         [InlineData(-50, 32)]
@@ -125,6 +141,35 @@ namespace LibraryCalc200
 
 
             Assert.False((a * b) != resultado);
+        }
+
+        [Fact]
+        public void SubtresSucesso()
+        {
+            var calculadora = new Calculadora();
+            var a = 10;
+            var b = 5;
+            var c = 90;
+
+            var resultado = calculadora.Sub(a, b, c);
+
+            Assert.True((a - b - c) == resultado);
+        }
+
+        [Theory]
+        [InlineData(1, 2, 5)]
+        [InlineData(10, 29, 0)]
+        [InlineData(-50, 32, 36)]
+        [InlineData(0, 2, 17)]
+        [InlineData(1, 200, 13)]
+        public void SubtresError(int a, int b, int c)
+        {
+            var calculadora = new Calculadora();
+
+            var resultado = calculadora.Sub(a, b, c);
+
+
+            Assert.False((a - b - c) != resultado);
         }
     }
 }
