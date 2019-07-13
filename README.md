@@ -8,7 +8,7 @@ Install-Package LibraryCalc20 -Version 1.0.3
 
 ## How to use
 
-'''cs
+```cs
 
 using System;
 using LibraryCalc20;
@@ -52,4 +52,4 @@ namespace LibraryCalc20
         }
     }
 }
-'''
+```
